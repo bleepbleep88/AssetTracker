@@ -1,0 +1,1 @@
+include ':app', ':gson-2.3.1', ':fablibrary'

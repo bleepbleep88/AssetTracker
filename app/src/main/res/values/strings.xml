@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AssetTracker</string>
+    <string name="add_asset_ex_printers">Add asset, Ex: printers</string>
+    <string name="asset_name_ex_printers">Asset name, Ex: printers</string>
+    <string name="add">Add</string>
+    <string name="add_an_asset_ex_printers">Add an asset: Ex printers</string>
+    <string name="enter_latitude_or_get_with_check">location or get it with check</string>
+    <string name="asset_name_ex_macbook_air">asset name. EX: Macbook air</string>
+    <string name="price_of_asset">price of asset</string>
+    <string name="get_longitude_and_latitude_instead_of_location_name">Get longitude and latitude instead of location name</string>
+    <string name="enter_a_location_name_ex_facility1_or_jacob_s_office">enter a location name: EX: facility1 or jacob\'s office</string>
+    <string name="location_name">location name</string>
+</resources>

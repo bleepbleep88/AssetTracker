@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.kole.assettracker.MainActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fabadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fab_ic_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/fab_button_margin_bottom"
+        android:layout_marginRight="@dimen/fab_button_margin_right"
+        android:onClick="addStuff"
+        app:fab_showAnimation="@anim/fab_slide_in_from_right"
+        app:fab_hideAnimation="@anim/fab_slide_out_to_right"
+        app:elevation="6dp"
+        app:fab_colorNormal="#DA4336"
+        app:fab_colorPressed="#E75043"
+        app:fab_colorRipple="#99FFFFFF"
+        app:fab_showShadow="true"
+        app:fab_shadowColor="#66000000"
+        app:fab_shadowRadius="4dp"
+        app:fab_shadowXOffset="1dp"
+        app:fab_shadowYOffset="3dp"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fabdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete_white_24dp"
+        android:layout_marginRight="@dimen/fab_button_margin_right"
+        android:onClick="changeDelete"
+        app:fab_showAnimation="@anim/fab_slide_in_from_right"
+        app:fab_hideAnimation="@anim/fab_slide_out_to_right"
+        app:elevation="6dp"
+        app:fab_colorNormal="#DA4336"
+        app:fab_colorPressed="#E75043"
+        app:fab_colorRipple="#99FFFFFF"
+        app:fab_showShadow="true"
+        app:fab_shadowColor="#66000000"
+        app:fab_shadowRadius="4dp"
+        app:fab_shadowXOffset="1dp"
+        app:fab_shadowYOffset="3dp"
+        android:layout_above="@+id/fabadd"
+        android:layout_alignStart="@+id/fabadd" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fabsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_white_24dp"
+        android:layout_marginRight="@dimen/fab_button_margin_right"
+        android:onClick="searcher"
+        app:fab_showAnimation="@anim/fab_slide_in_from_right"
+        app:fab_hideAnimation="@anim/fab_slide_out_to_right"
+        app:elevation="6dp"
+        app:fab_colorNormal="#DA4336"
+        app:fab_colorPressed="#E75043"
+        app:fab_colorRipple="#99FFFFFF"
+        app:fab_showShadow="true"
+        app:fab_shadowColor="#66000000"
+        app:fab_shadowRadius="4dp"
+        app:fab_shadowXOffset="1dp"
+        app:fab_shadowYOffset="3dp"
+        android:layout_above="@+id/fabdelete"
+        android:layout_alignStart="@+id/fabdelete" />
+
+</RelativeLayout>
